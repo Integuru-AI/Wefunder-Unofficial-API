@@ -1,0 +1,32 @@
+# Wefunder Unofficial API
+
+Unofficial Python integrations for Wefunder.
+
+## Integrations
+
+- `wefunder_get_offering_details.py` - `get_offering_details` (1,387 live events).
+- `wefunder_list_offerings.py` - `list_offerings` (493 live events).
+- `wefunder_fetch_offering_posts.py` - `fetch_offering_posts` (364 live events).
+- `wefunder_get_offering_media.py` - `get_offering_media` (217 live events).
+
+## Usage
+
+Each file exposes a `run(input, context)` entrypoint. The runtime is expected to provide:
+
+- `input`: integration-specific request fields.
+- `context["headers"]`: authenticated request headers when required.
+- `context["base_url"]`: the platform base URL when overriding the default.
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Info
+
+This unofficial API is built by [Integuru.ai](https://integuru.ai/).
+
+For custom requests or hosted authentication, contact richard@taiki.online.
+
+See the [complete list of APIs by Integuru](https://github.com/Integuru-AI/APIs-by-Integuru).
